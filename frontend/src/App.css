@@ -1,0 +1,153 @@
+/* NavBar */
+
+.navbar {
+  width: 100%;
+  background-color: #3F535D;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  
+}
+
+.navbar .container .logo {
+  cursor: pointer;
+  max-width: 120px;
+  height: auto;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+}
+
+.btn-login {
+  padding: 10px 20px;
+  background-color: transparent; /* nền trong suốt */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Hero */
+.hero {
+  background: #697695;
+}
+
+.hero .inner-wrap {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  padding: 150px 0;
+}
+
+.hero .inner-wrap .inner-logo {
+  height:60px;
+}
+.hero .inner-wrap .inner-title {
+  color: #fff;
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.hero .inner-wrap .inner-desc {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 auto;
+
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  background-color: #13131B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 80px;
+}
+
+.footer .copyright {
+  color: #fff;
+}
+
+/* Login */
+
+.login-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(5px); /* Làm mờ nền */
+  background-color: rgba(0, 0, 0, 0.4); /* Lớp phủ bán trong suốt */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Đảm bảo nổi lên trên */
+}
+
+.login-container .login-form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 1001;
+  position: relative;
+}
+
+.login-container .login-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.login-container .input-group input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.login-container .submit-btn {
+  padding: 0.75rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container .submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #666;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
