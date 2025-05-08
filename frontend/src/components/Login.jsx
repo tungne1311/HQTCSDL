@@ -5,27 +5,39 @@ import { useNavigate } from 'react-router-dom';
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const { setShowLogin } = useContext(AppContext);
+  const { setShowLogin, loginUser } = useContext(AppContext); // Thêm loginUser vào context
   const navigate = useNavigate();
 
   const onSubmitHandler = async (e) => {
     e.preventDefault();
     console.log('Email:', email, 'Password:', password);
-    setShowLogin(false);
+    
+  // Test login
+    if (email === 'admin@example.com' && password === 'admin123') {
+      loginUser('admin'); // Gọi loginUser từ context để lưu thông tin đăng nhập
+      navigate('/admin-dashboard');
+    } else if (email === 'employee@example.com' && password === 'employee123') {
+      loginUser('employee'); 
+      navigate('/dashboard-employee'); 
+    } else {
+      alert('Thông tin đăng nhập không hợp lệ!');
+    }
+    
+    setShowLogin(false); 
   };
 
   const handleClose = () => {
     setShowLogin(false);
-    navigate('/'); // Điều hướng về trang chủ
+    navigate('/'); 
   };
 
   return (
     <div className='login-container'>
-      <form onSubmit={onSubmitHandler} class='login-form'>
-        <button type='button' class='close-btn' onClick={handleClose}>×</button>
-        <h1 class='login-title'>Đăng nhập</h1>
+      <form onSubmit={onSubmitHandler} className='login-form'>
+        <button type='button' className='close-btn' onClick={handleClose}>×</button>
+        <h1 className='login-title'>Đăng nhập</h1>
         
-        <div class='input-group'>
+        <div className='input-group'>
           <input
             type='email'
             value={email}
@@ -45,7 +57,7 @@ const Login = () => {
           />
         </div>
 
-        <button type='submit' class='submit-btn'>Đăng nhập</button>
+        <button type='submit' className='submit-btn'>Đăng nhập</button>
       </form>
     </div>
   );
