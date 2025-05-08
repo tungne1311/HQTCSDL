@@ -12,7 +12,6 @@ import ManageParts from "./pages/ManageParts";
 import ManageProducts from "./pages/ManageProducts";
 import ManageCustomers from "./pages/ManageCustomers";
 import ManageEmployees from "./pages/ManageEmployees";
-import ManageDepartments from "./pages/ManageDepartments";
 import ManagePartInvoices from "./pages/ManagePartInvoices";
 import ManageProduction from "./pages/ManageProduction";
 import ManageProductInvoice from "./pages/ManageProductInvoice";
@@ -32,7 +31,6 @@ const App = () =>{
           <Route path="manage-products" element={<ManageProducts />} />
           <Route path="manage-customers" element={<ManageCustomers />} />
           <Route path="manage-employees" element={<ManageEmployees />} />
-          <Route path="manage-departments" element={<ManageDepartments />} />
           <Route path="manage-invoices" element={<ManagePartInvoices />} />
           <Route path="manage-production" element={<ManageProduction />} />
           <Route path="product-invoices" element={<ManageProductInvoice />} />
