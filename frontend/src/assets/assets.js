@@ -47,3 +47,113 @@ export const employeesData = [
     { id: 'KH009', name: 'Nguyễn Thị Mai', address: '606 Lê Duẩn, Hà Nội', phone: '0982 345 678' },
     { id: 'KH010', name: 'Lê Quang Hải', address: '707 Hai Bà Trưng, Hà Nội', phone: '0944 567 890' },
   ];
+
+
+  export const suppliersData = [
+    { supplierId: 'NCC001', supplierName: 'TechSupplier', totalAmount: 12500000 },
+    { supplierId: 'NCC002', supplierName: 'SupplyHub', totalAmount: 9800000 },
+    { supplierId: 'NCC003', supplierName: 'ElecParts', totalAmount: 7500000.5 },
+    { supplierId: 'NCC004', supplierName: 'AutoParts', totalAmount: 13450000 },
+    { supplierId: 'NCC005', supplierName: 'MechSupply', totalAmount: 6400000 },
+    { supplierId: 'NCC006', supplierName: 'Fasteners', totalAmount: 3200000.75 },
+    { supplierId: 'NCC007', supplierName: 'DigitalWares', totalAmount: 8900000 },
+    { supplierId: 'NCC008', supplierName: 'EcoComponents', totalAmount: 4200000 },
+    { supplierId: 'NCC009', supplierName: 'GreenSupply', totalAmount: 5600000 },
+    { supplierId: 'NCC010', supplierName: 'MetroParts', totalAmount: 10200000 },
+    { supplierId: 'NCC011', supplierName: 'GigaParts', totalAmount: 15000000 },
+    { supplierId: 'NCC012', supplierName: 'QuickSupply', totalAmount: 3700000 },
+    { supplierId: 'NCC013', supplierName: 'SmartTech', totalAmount: 11000000 },
+    { supplierId: 'NCC014', supplierName: 'NanoSupply', totalAmount: 5900000 },
+    { supplierId: 'NCC015', supplierName: 'SteelWorld', totalAmount: 12800000 }
+  ];
+
+
+  export const partsData = [
+    { partId: 'LP001', partName: 'Resistor', totalAmount: 1000 },
+    { partId: 'LP002', partName: 'Capacitor', totalAmount: 2000 },
+    { partId: 'LP003', partName: 'Inductor', totalAmount: 1500 },
+    // Add more parts as necessary
+  ];
+
+
+  export const invoicesData = [
+    { invoiceId: 'HD001', transactionDate: '2025-05-05', supplierName: 'TechSupplier', totalAmount: 12500000 },
+    { invoiceId: 'HD002', transactionDate: '2025-05-04', supplierName: 'SupplyHub', totalAmount: 9800000 },
+    { invoiceId: 'HD003', transactionDate: '2025-05-06', supplierName: 'ElecParts', totalAmount: 7500000.5 },
+
+  ];
+
+  export const productInvoicesData = [
+    {
+      invoiceId: "HDSP001",
+      transactionDate: "2025-05-01",
+      customerName: "Nguyễn Văn A",
+      vehicle: "Yamaha Exciter 155",
+      quantity: 1,
+      totalAmount: 48000000
+    },
+    {
+      invoiceId: "HDSP002",
+      transactionDate: "2025-05-02",
+      customerName: "Trần Thị B",
+      vehicle: "Honda SH Mode",
+      quantity: 2,
+      totalAmount: 140000000
+    },
+    {
+      invoiceId: "HDSP003",
+      transactionDate: "2025-05-03",
+      customerName: "Lê Hoàng C",
+      vehicle: "Suzuki Raider",
+      quantity: 1,
+      totalAmount: 50000000
+    },
+    {
+      invoiceId: "HDSP004",
+      transactionDate: "2025-05-04",
+      customerName: "Phạm Minh D",
+      vehicle: "Honda Winner X",
+      quantity: 3,
+      totalAmount: 135000000
+    }
+  ];
+
+
+
+  export const productsData = [
+    {
+      id: "P001",
+      name: "Honda Wave Alpha",
+      price: 17000000,
+      capacity: "110cc",
+      type: "Xe số"
+    },
+    {
+      id: "P002",
+      name: "Yamaha Sirius",
+      price: 19000000,
+      capacity: "115cc",
+      type: "Xe số"
+    },
+    {
+      id: "P003",
+      name: "Honda Vision",
+      price: 31000000,
+      capacity: "110cc",
+      type: "Xe tay ga"
+    },
+    {
+      id: "P004",
+      name: "Yamaha NVX",
+      price: 53000000,
+      capacity: "155cc",
+      type: "Xe tay ga"
+    },
+    {
+      id: "P005",
+      name: "Suzuki Raider R150",
+      price: 49000000,
+      capacity: "150cc",
+      type: "Xe côn tay"
+    }
+  ];
